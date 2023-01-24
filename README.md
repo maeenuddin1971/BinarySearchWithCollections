@@ -1,1 +1,1 @@
-# BinarySearchWithCollections
+This is a sample code that is implemented with java for binary search with Hashset data structures.. Please checkout in the develop branch for the latest change
