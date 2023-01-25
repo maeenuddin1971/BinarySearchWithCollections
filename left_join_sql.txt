@@ -1,0 +1,8 @@
+select ps.bank_Acc_No as bankacc,ps.bank_Name as bankname,ds.title as designation,am1.title as department,
+am2.title as operatingunit, am3.title as emplocation
+from hr_cr_emp_primary_assgnmnt  ps 
+left join HR_EMP_DESIGNATIONS ds on ps.HR_EMP_DESIGNATIONS_ID = ds.id
+left join All_Org_Mst am1 on ps.ALL_ORG_MST_DEPARTMENT_ID = am1.id
+left join All_Org_Mst am2 on ps.ALL_ORG_MST_OPERATING_UNIT_ID = am2.id
+left join All_Org_Mst am3 on ps.ALL_ORG_MST_LOCATION_ID = am3.id
+where ps.hr_cr_emp_id = 73346762
